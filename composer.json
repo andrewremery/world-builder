@@ -19,13 +19,13 @@
         "composer/installers": "v1.0.12",
         "cmb2/cmb2": "dev-master"
     },
-    "autoload": {
-        "files": ["../../mu-plugins/vendor/cmb2/init.php"]
-    },
     "extra": {
         "installer-paths": {
-            "../../mu-plugins/{$name}/": ["cmb2/cmb2"]
+            "../../plugins/{$name}/": ["cmb2/cmb2"]
         }
+    },
+    "autoload": {
+        "files": ["../../plugins/cmb2/init.php"]
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
